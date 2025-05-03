@@ -16,7 +16,7 @@ import {
 import Menu from './menu';
 
 const API_BASE_URL =
-  Platform.OS === 'android' ? 'http://10.0.2.2:3000' : 'http://localhost:3000';
+  Platform.OS === 'android' ? 'http://64.176.84.220:3100' : 'http://64.176.84.220:3100';
 
 type ProfileData = {
   ho_ten?: string;

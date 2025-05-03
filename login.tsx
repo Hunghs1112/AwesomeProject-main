@@ -17,7 +17,7 @@ interface LoginProps {
   onLoginSuccess: (user: any) => void;
 }
 
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'http://64.176.84.220:3100';
 
 function Login({ handleMenuPress, onLoginSuccess }: LoginProps) {
   const [mode, setMode] = useState<Mode>('login');
@@ -409,7 +409,7 @@ function Login({ handleMenuPress, onLoginSuccess }: LoginProps) {
         )}
       </View>
       {/* Menu và icon chat từ file menu.tsx */}
-      <Menu activeMenu="Tài khoản" handleMenuPress={handleMenuPress} />
+      <Menu activeMenu="Tài khoản" handleMenuPress={handleMenuPress} isLoggedIn={false} />
     </View>
   );
 }

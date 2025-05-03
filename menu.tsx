@@ -150,13 +150,13 @@ const Menu: React.FC<MenuProps> = ({ activeMenu, handleMenuPress, isLoggedIn }) 
 
           <TouchableOpacity
             style={styles.menuItem}
-            onPress={() => handleMenuPress('Quà tặng')}
+            onPress={() => handleMenuPress('Bảo dưỡng')}
           >
             <Image
-              source={require('./image/quatang1.png')}
-              style={getIconStyle('Quà tặng')}
+              source={require('./image/bd.png')}
+              style={getIconStyle('Bảo dưỡng')}
             />
-            <Text style={getTextStyle('Quà tặng')}>Quà tặng</Text>
+            <Text style={getTextStyle('Bão dưỡng')}>Bảo dưỡng</Text>
           </TouchableOpacity>
 
           <View style={styles.searchContainer}>
@@ -365,7 +365,7 @@ const Menu: React.FC<MenuProps> = ({ activeMenu, handleMenuPress, isLoggedIn }) 
 const styles = StyleSheet.create({
   bottomMenuContainer: {
     position: 'absolute',
-    bottom: 0,
+    bottom: -5,
     left: 0,
     right: 0,
     alignItems: 'center',

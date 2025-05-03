@@ -114,7 +114,7 @@ const ThongBao: React.FC<ThongBaoProps> = ({ activeMenu, handleMenuPress }) => {
       </ScrollView>
 
       {/* Menu bottom */}
-      <Menu activeMenu={activeMenu} handleMenuPress={handleMenuPress} />
+      <Menu activeMenu={activeMenu} handleMenuPress={handleMenuPress} isLoggedIn={false} />
     </View>
   );
 };

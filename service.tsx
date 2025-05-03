@@ -117,7 +117,7 @@ const Service: React.FC<ServiceProps> = ({
   // Lấy dữ liệu dịch vụ từ API khi component mount hoặc userData thay đổi
   useEffect(() => {
     if (userData && userData.id) {
-      fetch(`http://localhost:3000/services?customerId=${userData.id}`)
+      fetch(`http://10.0.2.2:3000/services?customerId=${userData.id}`)
         .then(response => response.json())
         .then(data => {
           const formattedServices = data.map((svc: any) => {
@@ -394,7 +394,7 @@ const Service: React.FC<ServiceProps> = ({
           </TouchableOpacity>
         )}
       </ScrollView>
-      <Menu activeMenu={activeMenu} handleMenuPress={handleMenuPress} />
+      <Menu activeMenu={activeMenu} handleMenuPress={handleMenuPress} isLoggedIn={false} />
     </SafeAreaView>
   );
 };

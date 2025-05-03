@@ -3,7 +3,7 @@ const mysql = require('mysql');
 // Tạo connection pool với số lượng kết nối tối đa là 10 (có thể điều chỉnh theo nhu cầu)
 const pool = mysql.createPool({
   connectionLimit: 10,
-  host: '103.255.237.115',
+  host: '103.255.237.88',
   port: 3306,
   user: 'hotrohoc_mixmylook',
   password: '92O^3FhpP!Od',

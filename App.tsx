@@ -15,6 +15,7 @@ import User from './user';
 import Service from './service';
 import ThongBao from './thongbao';
 import UuDai from './uudai';
+import DatLich from './datlich'; // Import the new DatLich component
 
 interface UserData {
   id?: number;
@@ -88,6 +89,15 @@ function App() {
     return (
       <UuDai
         activeMenu={activeMenu}
+        handleMenuPress={handleMenuPress}
+      />
+    );
+  }
+
+  if (activeMenu === 'Đặt lịch') {
+    return (
+      <DatLich
+        userData={userData}
         handleMenuPress={handleMenuPress}
       />
     );
